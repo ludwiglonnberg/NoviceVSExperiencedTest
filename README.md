@@ -1,16 +1,33 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is app is based on React and Vite and therefore to test run this code, make sure to have node.js installed on your system. 
 
-Currently, two official plugins are available:
+to run this code type the following commands into your terminal
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+````
+npm install #this makes sure you have all the packages needed
 
-## React Compiler
+npm run dev #this will run the code locally and provide you with a link
+````
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Some notes regarding file structure and naming
 
-## Expanding the ESLint configuration
+The code from the participants are all in the components folder. There were four participants, two novices and two experienced programmers. 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+When looking in the components folder you will see four subfolders
+
+````
+testE1
+testE2
+testN1
+testN2
+````
+the E indicates that the test is from an experienced programmer and the N indicates novice. 
+
+Within each folder you will also find the chat logs with chatGPT-4o from each user. 
+
+# Changing which test to view
+
+This can be done by simply changing the imports of the `App.jsx`, located at the top of that file. Since all component files are named the same way, you only need to change the subfolder of the components folder e.g. 
+
+/components/`testE1`/UserFetch to /components/`testN1`/UserFetch if you were viewing the first experienced test and want to view the first novice test.
