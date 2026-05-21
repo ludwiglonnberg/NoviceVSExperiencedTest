@@ -1,0 +1,83 @@
+/* Early 2000s styling for the Todo List */
+
+.todo-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid #000;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+}
+
+.todo-input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todo-text-input {
+  flex: 3;
+  padding: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.todo-input button {
+  flex: 1;
+  padding: 5px 10px;
+  background-color: yellow;
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-input button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list li button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.todo-list li button:hover {
+  background-color: #a71d2a;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+}
